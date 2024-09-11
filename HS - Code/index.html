@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>HS Code Predictor</title>
+</head>
+
+<body>
+    <div id="page1" class="container">
+        <img src="InvensisLogo.png" alt="Header Image" width="1200px" class="header-image">
+        <h1>ENTER THE DETAILS</h1>
+        <input type="text" id="inputText" placeholder="Type something...">
+        <br>
+        <button onclick="displayOutput()">Predict</button>
+        <!-- Loading indicator -->  
+        <div id="loading" style="display:none;">Loading...</div> 
+    </div>
+
+    <div id="page2" class="container" style="display:none;">
+        <h1>PREDICTED ENTITIES AND SCORE :</h1>
+        <div id="output"></div>
+        <br>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
